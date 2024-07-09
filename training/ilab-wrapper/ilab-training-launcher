@@ -55,7 +55,7 @@ torchrun \
 --node_rank 0 \
 --nproc_per_node ${NPROC_PER_NODE} \
 --rdzv_id 101 \
---rdzv_endpoint 0.0.0.0:8888 /training/main_ds.py \
+--rdzv_endpoint 0.0.0.0:8888 /training/src/instructlab/training/main_ds.py \
 --model_name_or_path /instructlab/models/ibm/granite-7b-base \
 --data_path /instructlab/training/data.jsonl \
 --output_dir="/instructlab/training_output" \
